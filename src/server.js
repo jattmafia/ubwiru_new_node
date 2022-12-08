@@ -22,7 +22,7 @@ mongoose.connect("mongodb+srv://ubwiru:gUjhe1uC7ZnaKuIB@cluster0.c1roijk.mongodb
   });
 
 
- const PORT;
+ let PORT;
  app.listen(PORT, function() {
     {}
     console.log(`App started at : ${PORT}`);
