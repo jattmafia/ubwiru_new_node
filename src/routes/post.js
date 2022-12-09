@@ -19,7 +19,7 @@ router.post("/post",requirelogin,upload.single('image'),async function(req,res){
     // }
 
     if(uploadedFile){
-       imgurl = "http://localhost:5000/" + uploadedFile.filename;
+       imgurl = "https://ubwiru.onrender.com/" + uploadedFile.filename;
     }
 
    
