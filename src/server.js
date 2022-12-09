@@ -18,7 +18,7 @@ mongoose.connect("mongodb+srv://ubwiru:gUjhe1uC7ZnaKuIB@cluster0.c1roijk.mongodb
     
     
     app.get("/", function(req,res){
-   res.send("Ubwiru setup");
+   res.send("Ubwiru setup  ${PORT}");
    });
 
    const authRoutes = require('./routes/auth');
