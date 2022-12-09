@@ -11,6 +11,12 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 mongoose.connect("mongodb+srv://ubwiru:gUjhe1uC7ZnaKuIB@cluster0.c1roijk.mongodb.net/Ubwiru?retryWrites=true&w=majority"
 ).then(function(){
+     app.listen(PORT, function() {
+    {}
+    console.log(`App started at : ${PORT}`);
+ });
+    
+    
     app.get("/", function(req,res){
    res.send("Ubwiru setup");
    });
@@ -24,10 +30,7 @@ mongoose.connect("mongodb+srv://ubwiru:gUjhe1uC7ZnaKuIB@cluster0.c1roijk.mongodb
 
 
 
- app.listen(PORT, function() {
-    {}
-    console.log(`App started at : ${PORT}`);
- });
+
 
 
 
