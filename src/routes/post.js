@@ -39,7 +39,7 @@ router.post("/post",requirelogin,upload.single('image'),async function(req,res){
 });
 
 router.get("/post",requirelogin,async function(req,res){
-  Post.find().populate("postedBy","_id firstname lastname")
+  Post.find().populate("postedBy","_id firstname lastname").sort({_id:-1})
   .then(posts=>{
     res.json({success:true,data:posts});
   }).catch(err=>{
